@@ -1,12 +1,22 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  {
+    "sainnhe/everforest",
+    name = "everforest",
+    config = function()
+      -- vim.o.background = dark
+      vim.g.everforest_background = "hard"
+      vim.g.everforest_enable_italics = 1
+      vim.g.everforest_disable_italic_comment = 1
+    end,
+  },
+  {
+    "EdenEast/nightfox.nvim",
+    name = "nightfox",
+    config = function() 
+    end,
+  },
+  {
+    "savq/melange-nvim",
+    name = "melange",
+  }
 }
