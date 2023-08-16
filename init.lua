@@ -27,6 +27,15 @@ return {
   },
 
   lsp = {
+    config = {
+      bashls = {
+        settings = {
+          bashIde = {
+            shellcheckPath = ""
+          }
+        }
+      }
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
